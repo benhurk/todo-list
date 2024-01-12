@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="main9.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Lista de tarefas</h1>
+        <button type="button" class="btn-green" id="btn-new">&#10010; Nova lista</button>
+        <button type="submit" id="btn-cancel">&#10006; Cancelar</button>
+    </header>
+
+    <main>
+        <form id="list-add-input">
+            <input type="text" required placeholder="Nome da lista" id="list-name-input">
+            <button type="submit" class="btn-green" id="btn-add">&#10010; Adicionar</button>
+        </form>
+
+        <div id="lists">
+        </div>
+    </main>
+
+    <span id="empty_warning">Você não possui nenhuma lista.</span>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main9.js"></script>
+</body>
+
+</html>

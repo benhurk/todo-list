@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: rgb(214, 214, 214);
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+#list-add-input {
+    display: flex;
+    padding: 16px 2px;
+    margin-bottom: 32px;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+#list-add-input input {
+    padding: 8px;
+    margin-right: 8px;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid teal;
+    border-left: 2px solid teal;
+}
+
+#list-add-input input:focus {
+    border-color: mediumseagreen;
+}
+
+.btn-green {
+    padding: 6px 10px;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-green:hover {
+    background-color: seagreen;
+}
+
+#btn-cancel {
+    display: none;
+    padding: 6px 10px;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+#btn-cancel:hover {
+    background-color: salmon;
+}
+
+#empty_warning {
+    display: block;
+    margin-top: 32px;
+    font-size: 18px;
+    font-style: oblique;
+    color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.list-container {
+    margin-right: 10px;
+}
+
+ol {
+    list-style-type: none;
+    display: inline-block;
+    max-width: 310px;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.list-header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.list-header button {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-invisible-placeholder {
+    margin-left: 4px;
+    visibility: hidden;
+}
+
+.btn-remove {
+    margin-right: 4px;
+    background-color: rgb(241, 52, 90);
+}
+
+.btn-remove:hover {
+    background-color: salmon;
+}
+
+.li-line {
+    background-color: rgba(0, 0, 0, 0.10);
+    padding: 4px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    display: none;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.li-line:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.li-line:last-of-type {
+    border-bottom: 1px solid black;
+}
+
+.li-line:hover {
+    background-color: rgb(170, 169, 169);
+}
+
+.li-remove {
+    background: none;
+    color: crimson;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 6px;
+    text-decoration: none;
+}
+
+.li-remove:hover {
+    color: salmon;
+}
+
+.list-form button {
+    justify-content: center;
+    min-width: 310px;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.list-btn-new {
+    background-color: rgba(0, 128, 128, 0.5);
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.list-btn-new:hover {
+    background-color: seagreen;
+    color:white;
+}
+
+.list-input {
+    background-color: gainsboro;
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    outline: none;
+    padding: 4px 10px;
+    font-size: 16px;
+    display: none;
+    text-align: center;
+    min-width: 310px;
+}
+
+.list-btn-add {
+    display: none;
+    background-color: teal;
+    color: white;
+}
+
+.list-btn-add:hover {
+    background-color: seagreen;
+}
+
+.btn-quit {
+    display: none;
+    background-color: crimson;
+    color: white;
+}
+
+.btn-quit:hover {
+    background-color: salmon;
+}
+
+.list-form-buttons button {
+    min-width: 155px;
+}
+.list-form-buttons {
+    display: flex;
+}
+
+#lists {
+    display: flex;
+    flex-wrap: wrap;
+}
